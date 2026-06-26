@@ -54,7 +54,21 @@
 }
 
 <style>
-/* வீடியோவிற்கான புதிய ஸ்டைல் */
+   
+.my-photo {
+    width: 200px; 
+    height: 150px; 
+    cursor: pointer; 
+    margin: 10px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.my-photo:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%; 
@@ -538,12 +552,27 @@ Dedicated educator committed to quality education, creative classroom learning, 
 <img src="gallery28.jpg">
 <img src="gallery29.jpg">
 <img src="gallery30.jpg">
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 20px;">
 
+    <img src="alli.jpg" alt="Alli" onclick="playAudio('alli.mp3')" style="width: 200px; height: 150px; cursor: pointer; border-radius: 10px; transition: 0.3s;">
 
+    <img src="aduppu.jpg" alt="Aduppu" onclick="playAudio('aduppu.mp3')" style="width: 200px; height: 150px; cursor: pointer; border-radius: 10px; transition: 0.3s;">
 
+    <img src="agal.jpg" alt="Agal" onclick="playAudio('agal.mp3')" style="width: 200px; height: 150px; cursor: pointer; border-radius: 10px; transition: 0.3s;">
+
+    <img src="anil.jpg" alt="Anil" onclick="playAudio('anil.mp3')" style="width: 200px; height: 150px; cursor: pointer; border-radius: 10px; transition: 0.3s;">
+
+    <img src="appalam.jpg" alt="Appalam" onclick="playAudio('appalam.mp3')" style="width: 200px; height: 150px; cursor: pointer; border-radius: 10px; transition: 0.3s;">
 
 </div>
 
+<script>
+    function playAudio(audioName) {
+        var audio = new Audio(audioName);
+        audio.play();
+    }
+</script>
 <section id="video" style="padding: 20px;">
     <h2 style="text-align: center; color: #123a78; margin-bottom: 30px;">Learning Videos</h2>
 
